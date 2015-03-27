@@ -1,0 +1,23 @@
+/*
+ * Xilinx ZED board DTS
+ *
+ * Copyright (C) 2013 Xilinx, Inc.
+ *
+ * SPDX-License-Identifier:	GPL-2.0+
+ */
+/dts-v1/;
+#include "zynq-7000.dtsi"
+
+/ {
+	model = "TB-7Z-020-EMC";
+	compatible = "xlnx,zynq-gemini", "xlnx,zynq-7000";
+
+	aliases {
+		serial0 = &uart0;
+	};
+
+	memory {
+		device_type = "memory";
+		reg = <0 0x40000000>;
+	};
+};
