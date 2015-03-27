@@ -6,6 +6,9 @@ choice
 config TARGET_ZYNQ_ZED
 	bool "Zynq ZedBoard"
 
+config TARGET_ZYNQ_GEMINI
+       bool "Zynq TB-7Z-020-EMC"
+
 config TARGET_ZYNQ_MICROZED
 	bool "Zynq MicroZed"
 
@@ -43,5 +46,5 @@ config SYS_CONFIG_NAME
 	default "zynq_zybo" if TARGET_ZYNQ_ZYBO
 	default "zynq_cse" if TARGET_ZYNQ_CSE
 	default "zynq_afx" if TARGET_ZYNQ_AFX
-
+	default "zynq_gemini" if TARGET_ZYNQ_GEMINI
 endif
